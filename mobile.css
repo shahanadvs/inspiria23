@@ -7,17 +7,19 @@
    }
     .logoclass img{
         width: 350px;
-        left: 50px;
-        margin-left: 80px;
+        left: 0px;
+        margin-left: 0px;
     }
     #landing-video{
-       object-fit: contain;
+        object-fit: cover;
         width:1000px;
-        left: -180px
+        
+        left: -80px
     }
     #logoHead{
-        left: -50px ;
+        
         margin-top: 20px;
+        margin-left: 10px;
     }
 
 
