@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+   
+    .logoclass img{
+        width: 350px;
+        left: 50px;
+        margin-left: 80px;
+    }
+    #landing-video{
+        width:1000px;
+        left: -180px
+    }
+    #logoHead{
+        left: -50px ;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+}

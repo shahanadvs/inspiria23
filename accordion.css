@@ -1,0 +1,85 @@
+.accordion-wrap {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-wrap a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .accordion-wrap a:hover {
+    text-decoration: none;
+  }
+  .accordion-wrap .accordion {
+    position: relative;
+    border-top: 1px solid #fff;
+  }
+  .accordion-wrap .accordion:last-child {
+    border-bottom: 1px solid #fff;
+  }
+  .accordion-wrap .accordion .teaser {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 24px 100px 24px 0;
+    position: relative;
+  }
+  .accordion-wrap .accordion .teaser:last-child {
+    border-bottom: 1px solid #fff;
+  }
+  .accordion-wrap .accordion .teaser .time {
+    margin-top: 5px;
+    width: 200px;
+  }
+  .accordion-wrap .accordion .teaser .title .theme {
+    opacity: 0.4;
+  }
+  @media (max-width: 990px) {
+    .accordion-wrap .accordion .teaser {
+      flex-direction: column;
+    }
+  }
+  .accordion-wrap .accordion .content {
+    padding: 0 120px 30px 200px;
+  }
+  @media (max-width: 1200px) {
+    .accordion-wrap .accordion .content {
+      padding: 0 120px 30px 0;
+    }
+  }
+  .accordion-wrap .accordion .accordion-toggle {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.14);
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  .accordion-wrap .accordion .accordion-toggle span {
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+  .accordion-wrap .accordion .accordion-toggle span.one {
+    height: 1px;
+    width: 26px;
+    position: absolute;
+    top: 50%;
+  }
+  .accordion-wrap .accordion .accordion-toggle span.two {
+    width: 1px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transform: rotate(120deg);
+  }
+ 
+  .accordion-wrap .accordion.collapsed .accordion-toggle span.two {
+    opacity: 1;
+    transform: rotate(0);
+  }
